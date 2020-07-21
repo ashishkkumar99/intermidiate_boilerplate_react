@@ -11,6 +11,11 @@
 - Prettier
 - ESLint
 
+## bable, webpack and react-hot-loder
+For buliding JSX and ESnext scripts webpack needs bable loader.
+To integrate react-hot-loader in the webpack, add react-hot-loader/babel plugin to babel and export your root component using hot API of react-hot-loader.
+Also make sure that the hot key in devServer option of webpack.config.js is set to true, this allows HMR(Hot module replacement).
+
 ## Basic prettier
 
 To enable prettier in the project the IDE or text editor must have prettier extension. The IDE and text editor set the configuration for prettier to default. However we can change configuration via using .prettierrc file.  
